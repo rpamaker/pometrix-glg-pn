@@ -16,16 +16,17 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
             status_code=400
         )
 
-    # Ejemplo: responder con parte del payload
-    rut = req_body.get("rut", "undefined")
-    total = req_body.get("total_amount", 0)
+    # Espera un payload con una lista bajo la clave 'posting'
+    if not isinstance(req_body, dict) or 'posting' not in req_body or not isinstance(req_body['posting'], list):
+        return func.HttpResponse(
+            "Invalid payload: expected a JSON object with a 'posting' list",
+            status_code=400
+        )
 
-    result = {
-        "status": "ok",
-        "message": f"Procesado RUT: {rut}, Total: {total}",
-        "received": req_body
-    }
-    logging.info(f"Processed data: {result}")
+    for item in req_body['posting']:
+        numero_factura = str(item.get('NUMERO DE FACTURA', ''))
+        proveedor_nombre = str(item.get('PROVEEDOR NOMBRE O RAZON SOCIAL', ''))
+        item['CONCEPTO'] = f"{numero_factura} - {proveedor_nombre}"
 
     return func.HttpResponse(
         json.dumps(req_body),
