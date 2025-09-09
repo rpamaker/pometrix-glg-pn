@@ -16,4 +16,4 @@ https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-cl
 Se puede debugear tambien
 
 # 4 URL para probar luego de deploy
-https://capability-demo.azurewebsites.net/api/http_trigger
+https://capability-glg.azurewebsites.net/api/http_trigger
