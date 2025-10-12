@@ -16,3 +16,22 @@ func azure functionapp publish capability-glg
 
 ## Result:
 Invoke url: https://capability-glg.azurewebsites.net/api/http_trigger
+
+
+# Agrego webform con pdf splitter
+
+## Claude prompt:
+create a new end point /pdfsplitter
+It should respond a webpage. When I go in the browser to https://capability-glg.azurewebsites.net/api/pdfsplitter it should render a webpage. The web page will be just a webform. 
+A button to upload a file.
+The webform fields will be 
+- desde pagina.
+- hasta pagina.
+Then an "SPLIT" button.
+The button will be "disable" until a file is selected to upload and the fields have some value.
+
+(file upload selection validation: the file should be a pdf)
+
+When the SPLIT button it hit it should generate a pdf with the split of the original pdf from page (desde pagina) to page (hasta pagina), and it should download the splitter pdf.
+
+Try to mantain the pront end as vallina as possible (html, javascript, jquery). You can propose front end libraries if needed, no problem, but try to avoid getting complex. Also the project structure make it as simple as possible.
