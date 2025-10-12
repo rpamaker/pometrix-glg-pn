@@ -35,3 +35,4 @@ The button will be "disable" until a file is selected to upload and the fields h
 When the SPLIT button it hit it should generate a pdf with the split of the original pdf from page (desde pagina) to page (hasta pagina), and it should download the splitter pdf.
 
 Try to mantain the pront end as vallina as possible (html, javascript, jquery). You can propose front end libraries if needed, no problem, but try to avoid getting complex. Also the project structure make it as simple as possible.
+

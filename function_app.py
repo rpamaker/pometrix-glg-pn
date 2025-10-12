@@ -139,10 +139,6 @@ def get_login_html() -> str:
                 <button type="submit" id="loginButton">INGRESAR</button>
                 <div class="error-message" id="errorMessage"></div>
 
-                <div class="info-message">
-                    <strong>Formato de contraseña:</strong> {usuario}2025!<br>
-                    <em>Ejemplo: Si el usuario es "juan", la contraseña es "juan2025!"</em>
-                </div>
             </form>
         </div>
 
@@ -476,10 +472,24 @@ def pdf_splitter(req: func.HttpRequest) -> func.HttpResponse:
 
                 // Logout function
                 function logout() {
-                    // Clear session cookie
-                    document.cookie = 'session_token=; Path=/; Max-Age=0;';
-                    // Reload page to show login form
-                    window.location.reload();
+                    const formData = new FormData();
+                    formData.append('action', 'logout');
+
+                    $.ajax({
+                        url: window.location.href,
+                        type: 'POST',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function(data, status, xhr) {
+                            // Reload page to show login form
+                            window.location.reload();
+                        },
+                        error: function(xhr, status, error) {
+                            // Even if there's an error, try to reload the page
+                            window.location.reload();
+                        }
+                    });
                 }
             </script>
         </body>
@@ -516,6 +526,13 @@ def pdf_splitter(req: func.HttpRequest) -> func.HttpResponse:
                 # Return success response with cookie
                 response = func.HttpResponse("Login exitoso", status_code=200)
                 response.headers['Set-Cookie'] = f'session_token={session_token}; Path=/; Max-Age=3600; HttpOnly'
+                return response
+
+            # Check if this is a logout request
+            if form.get('action') == 'logout':
+                # Return response that clears the session cookie
+                response = func.HttpResponse("Logout exitoso", status_code=200)
+                response.headers['Set-Cookie'] = 'session_token=; Path=/; Max-Age=0; HttpOnly'
                 return response
 
             # For PDF processing, check authentication first
