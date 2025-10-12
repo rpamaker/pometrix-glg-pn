@@ -16,6 +16,7 @@ func azure functionapp publish capability-glg
 
 ## Result:
 Invoke url: https://capability-glg.azurewebsites.net/api/http_trigger
+Formulario splitter: https://capability-glg.azurewebsites.net/api/pdfsplitter
 
 
 # Agrego webform con pdf splitter
