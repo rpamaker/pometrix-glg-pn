@@ -1,0 +1,18 @@
+{
+    "items": [
+        {
+            "ORIGEN": "US",
+            "CANTIDAD": 18720.0,
+            "TIPO_UNIDAD": "KG",
+            "PRECIO_UNIDAD": 1.635,
+            "CODIGO_PRODUCTO": "RA34/3222M",
+            "VALOR_TOTAL_ITEM": 30607.2,
+            "DESCRIPCION_PRODUCTO": "FLOJET EM 533 FRAC"
+        }
+    ],
+    "nro_factura": "1951099",
+    "fecha_factura": "6-Aug-2025",
+    "total_factura": "30,607.20",
+    "total_suma": 30607.2,
+    "cantidad_suma": 18720.0
+}

@@ -1,0 +1,88 @@
+{
+    "items": [
+        {
+            "ORIGEN": null,
+            "CANTIDAD": 36.0,
+            "TIPO_UNIDAD": "UN",
+            "PRECIO_UNIDAD": 212.0,
+            "CODIGO_PRODUCTO": "9H.LJELA.TBA",
+            "VALOR_TOTAL_ITEM": 7632.0,
+            "DESCRIPCION_PRODUCTO": "27W LED MONITOR PD2705Q GREY"
+        },
+        {
+            "ORIGEN": null,
+            "CANTIDAD": 56.0,
+            "TIPO_UNIDAD": "UN",
+            "PRECIO_UNIDAD": 133.0,
+            "CODIGO_PRODUCTO": "9H.LNALA.TBL",
+            "VALOR_TOTAL_ITEM": 7448.0,
+            "DESCRIPCION_PRODUCTO": "27W LCD MONITOR EX271 WHITE"
+        },
+        {
+            "ORIGEN": null,
+            "CANTIDAD": 90.0,
+            "TIPO_UNIDAD": "UN",
+            "PRECIO_UNIDAD": 298.0,
+            "CODIGO_PRODUCTO": "9H.LN1LB.QBL",
+            "VALOR_TOTAL_ITEM": 26820.0,
+            "DESCRIPCION_PRODUCTO": "24.1W LED MONITOR XL2546X+ DARK GREY"
+        },
+        {
+            "ORIGEN": null,
+            "CANTIDAD": 66.0,
+            "TIPO_UNIDAD": "UN",
+            "PRECIO_UNIDAD": 352.0,
+            "CODIGO_PRODUCTO": "9H.LMRLB.QBL",
+            "VALOR_TOTAL_ITEM": 23232.0,
+            "DESCRIPCION_PRODUCTO": "24.1W LED MONITOR XL2566X+ DARK GREY"
+        },
+        {
+            "ORIGEN": null,
+            "CANTIDAD": 90.0,
+            "TIPO_UNIDAD": "UN",
+            "PRECIO_UNIDAD": 18.0,
+            "CODIGO_PRODUCTO": "9H.N4JFQ.A2E",
+            "VALOR_TOTAL_ITEM": 1620.0,
+            "DESCRIPCION_PRODUCTO": "MOUSE PAD GAMING GEAR G-SR II BLACK"
+        },
+        {
+            "ORIGEN": null,
+            "CANTIDAD": 150.0,
+            "TIPO_UNIDAD": "UN",
+            "PRECIO_UNIDAD": 19.0,
+            "CODIGO_PRODUCTO": "9H.N4SFQ.A61",
+            "VALOR_TOTAL_ITEM": 2850.0,
+            "DESCRIPCION_PRODUCTO": "MOUSE PAD GAMING GEAR G-SR-SE-ZC04 GREEN"
+        },
+        {
+            "ORIGEN": null,
+            "CANTIDAD": 30.0,
+            "TIPO_UNIDAD": "UN",
+            "PRECIO_UNIDAD": 473.0,
+            "CODIGO_PRODUCTO": "9H.JSP77.14L",
+            "VALOR_TOTAL_ITEM": 14190.0,
+            "DESCRIPCION_PRODUCTO": "PROJECTOR FOR BUSINESS EW805ST WHITE"
+        },
+        {
+            "ORIGEN": null,
+            "CANTIDAD": 24.0,
+            "TIPO_UNIDAD": "UN",
+            "PRECIO_UNIDAD": 696.0,
+            "CODIGO_PRODUCTO": "9H.F9ETK.DA5",
+            "VALOR_TOTAL_ITEM": 16704.0,
+            "DESCRIPCION_PRODUCTO": "INTERACTIVE FLAT PANEL RE6504 BLACK"
+        },
+        {
+            "ORIGEN": null,
+            "CANTIDAD": 12.0,
+            "TIPO_UNIDAD": "UN",
+            "PRECIO_UNIDAD": 1120.0,
+            "CODIGO_PRODUCTO": "9H.F9GTK.DA5",
+            "VALOR_TOTAL_ITEM": 13440.0,
+            "DESCRIPCION_PRODUCTO": "INTERACTIVE FLAT PANEL RE8604 BLACK"
+        }
+    ],
+    "nro_factura": "BQBR010501082025",
+    "fecha_factura": "Aug. 1st, 2025",
+    "total_factura": "USD 113,936.00"
+}

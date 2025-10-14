@@ -211,9 +211,17 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
         valor_total_item = item.get('VALOR_TOTAL_ITEM', 0)
         if isinstance(valor_total_item, (int, float)):
             total_suma += float(valor_total_item)
-    
-    # Agregar el total_suma al payload
+
+    # Sumar todos los valores CANTIDAD
+    cantidad_suma = 0.0
+    for item in req_body['items']:
+        cantidad = item.get('CANTIDAD', 0)
+        if isinstance(cantidad, (int, float)):
+            cantidad_suma += float(cantidad)
+
+    # Agregar el total_suma y cantidad_suma al payload
     req_body['total_suma'] = total_suma
+    req_body['cantidad_suma'] = cantidad_suma
 
     return func.HttpResponse(
         json.dumps(req_body),

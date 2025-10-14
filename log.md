@@ -19,6 +19,13 @@ Invoke url: https://capability-glg.azurewebsites.net/api/http_trigger
 Formulario splitter: https://capability-glg.azurewebsites.net/api/pdfsplitter
 
 
+
+# Ajsutes capability
+
+## Agregar suma de cantidad
+
+in http_trigger add a new column to the response same as VALOR_TOTAL_ITEM to total_suma for CANTIDAD to cantidad_suma
+
 # Agrego webform con pdf splitter
 
 ## Claude prompt:
