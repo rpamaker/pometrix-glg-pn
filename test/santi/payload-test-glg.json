@@ -1,0 +1,43 @@
+{
+    "items": [
+        {
+            "ORIGEN": "FR",
+            "CANTIDAD": "3.168",
+            "TIPO_UNIDAD": null,
+            "PRECIO_UNIDAD": 1.74,
+            "CODIGO_PRODUCTO": "MB694700",
+            "VALOR_TOTAL_ITEM": 5512.32,
+            "DESCRIPCION_PRODUCTO": "CRV AIR FOAM CLEANSER 1.7oz"
+        },
+        {
+            "ORIGEN": "CN",
+            "CANTIDAD": "3.360",
+            "TIPO_UNIDAD": null,
+            "PRECIO_UNIDAD": 0.33,
+            "CODIGO_PRODUCTO": "MB668100",
+            "VALOR_TOTAL_ITEM": 1108.8,
+            "DESCRIPCION_PRODUCTO": "CRV ACNE CLEANSER Tube 0.17OZ SZ"
+        },
+        {
+            "ORIGEN": "FR",
+            "CANTIDAD": "216",
+            "TIPO_UNIDAD": null,
+            "PRECIO_UNIDAD": 6.36,
+            "CODIGO_PRODUCTO": "MB533101",
+            "VALOR_TOTAL_ITEM": 1373.76,
+            "DESCRIPCION_PRODUCTO": "ANT WETSKIN DP50+ TC200ML_ES(pt)"
+        },
+        {
+            "ORIGEN": "FR",
+            "CANTIDAD": "324",
+            "TIPO_UNIDAD": null,
+            "PRECIO_UNIDAD": 6.24,
+            "CODIGO_PRODUCTO": "MB532601",
+            "VALOR_TOTAL_ITEM": 2021.76,
+            "DESCRIPCION_PRODUCTO": "ANTH WETSKIN 50+ TC200ML_ES(pt,it)"
+        }
+    ],
+    "nro_factura": "SD00000751",
+    "fecha_factura": "Aug 27, 2025",
+    "total_factura": "10.061,89"
+}

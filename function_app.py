@@ -218,6 +218,9 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
         cantidad = item.get('CANTIDAD', 0)
         if isinstance(cantidad, (int, float)):
             cantidad_suma += float(cantidad)
+        elif isinstance(cantidad, str) and cantidad.replace('.', '').replace(',', '').isdigit():
+            # Manejar strings numéricos
+            cantidad_suma += float(cantidad.replace(',', '.'))
 
     # Agregar el total_suma y cantidad_suma al payload
     req_body['total_suma'] = total_suma
